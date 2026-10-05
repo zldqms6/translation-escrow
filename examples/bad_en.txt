@@ -1,0 +1,9 @@
+[Fictional project example] Hanbit Swap Season 2 Liquidity Campaign
+
+The Hanbit Swap Season 2 liquidity campaign starts on October 13 at 10:00 AM KST.
+
+During the campaign, wallets that provide liquidity to the ETH/USDC pool earn points based on how much they supply and for how long. Points are tallied once a day at midnight UTC, and each wallet can earn up to 50,000 points per day.
+
+The campaign runs for four weeks, and the final leaderboard will be published within 7 days after it ends. The top 300 wallets will receive additional rewards.
+
+Please note: points are not tokens and do not guarantee any future token allocation.
