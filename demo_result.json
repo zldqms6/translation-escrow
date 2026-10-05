@@ -1,0 +1,84 @@
+{
+  "contract": "0x2A35087a2f409B504D05D4758Da530A155EC21AC",
+  "network": "studionet",
+  "examples_commit": "55abbebe532c98cfea55ebb974275cad599ed20a",
+  "jobs": [
+    {
+      "label": "flawed first, then fixed",
+      "id": 0,
+      "steps": [
+        {
+          "file": "bad_en.txt",
+          "committed_sha_of": "bad_en.txt",
+          "tx": "0x0c998934b18e7ec73dba8f68f6de2c369c6777438e423d9e045b2dce42a92434",
+          "exec": "SUCCESS",
+          "status": "revise",
+          "verdict": {
+            "checks": {
+              "delivery_hash_ok": true,
+              "glossary_missing": [],
+              "glossary_ok": true,
+              "length_ok": true
+            },
+            "grade": {
+              "accuracy": 2,
+              "fluency": 7,
+              "major_errors": [
+                "Daily point cap changed from 5,000 to 50,000 points per wallet",
+                "Warning about impermanent loss risk omitted entirely",
+                "Warning about multi-wallet disqualification omitted entirely"
+              ],
+              "score": 4
+            },
+            "passed": false
+          }
+        },
+        {
+          "file": "good_en.txt",
+          "committed_sha_of": "good_en.txt",
+          "tx": "0xf3117b91a2396762bac615aae79f2affc8191f33eed63af4cc1fc6c8a22e8006",
+          "exec": "SUCCESS",
+          "status": "paid",
+          "verdict": {
+            "checks": {
+              "delivery_hash_ok": true,
+              "glossary_missing": [],
+              "glossary_ok": true,
+              "length_ok": true
+            },
+            "grade": {
+              "accuracy": 10,
+              "fluency": 10,
+              "major_errors": [],
+              "score": 10
+            },
+            "passed": true
+          }
+        }
+      ]
+    },
+    {
+      "label": "delivery does not match its committed hash",
+      "id": 1,
+      "steps": [
+        {
+          "file": "good_en.txt",
+          "committed_sha_of": "bad_en.txt",
+          "tx": "0x37e40ecfd8ff3503ea11cde26d07b1cbf394b36e302fe6ba633f82a4b5af1c93",
+          "exec": "SUCCESS",
+          "status": "revise",
+          "verdict": {
+            "checks": {
+              "delivery_hash_ok": false,
+              "glossary_missing": [],
+              "glossary_ok": true,
+              "length_ok": true
+            },
+            "grade": null,
+            "passed": false
+          }
+        }
+      ]
+    }
+  ]
+}
