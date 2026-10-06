@@ -64,7 +64,7 @@ So a leader can't inflate a score or flip a fail into a pass. The tests cover bo
 
 Contract: `0x2A35087a2f409B504D05D4758Da530A155EC21AC`
 
-The texts are `examples/` in this repo at commit `55abbeb`, served from `raw.githubusercontent.com`, so their hashes are fixed. The source is an original Korean campaign notice for a fictional project, written for this demo.
+The texts are `examples/` in this repo at commit `b2ab256` (the live run used the same files under their pre-rewrite commit id `55abbeb`; the bytes and sha256 values are identical), served from `raw.githubusercontent.com`, so their hashes are fixed. The source is an original Korean campaign notice for a fictional project, written for this demo.
 
 **Job 0** (ko → en, glossary `포인트→points`, `유동성→liquidity`, min score 7, 5 GEN):
 
